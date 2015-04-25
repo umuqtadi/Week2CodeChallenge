@@ -10,7 +10,7 @@ namespace Week2CodeChallenge
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 21; i++)
             {
                 FizzBuzz(i);
             }
@@ -61,9 +61,9 @@ namespace Week2CodeChallenge
 
             int numLetter = numLower + numUpper;
             Console.WriteLine("Input: " + inString);
-            Console.WriteLine("Number of lowercase {0}s found: {1}", letter, numLower);
-            Console.WriteLine("Number of uppercase {0}s found: {1}", letter, numUpper);
-            Console.WriteLine("Number of {0}s found: {1}", letter, numLetter);
+            Console.WriteLine("Number of lowercase {0}s found: {1}", letter.ToString().ToUpper(), numLower);
+            Console.WriteLine("Number of uppercase {0}s found: {1}", letter.ToString().ToUpper(), numUpper);
+            Console.WriteLine("Number of {0}s found: {1}", letter.ToString().ToUpper(), numLetter);
         }
     }
 }
