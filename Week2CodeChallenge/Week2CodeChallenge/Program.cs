@@ -41,11 +41,11 @@ namespace Week2CodeChallenge
                 Console.WriteLine(number);
             }
         }
+
         static void LetterCounter(char letter, string inString)
         {
-
             int numLower = 0;
-            int numUpper = 0;   
+            int numUpper = 0;
 
             for (int i = 0; i < inString.Length; i++)
             {
@@ -54,16 +54,14 @@ namespace Week2CodeChallenge
                     numLower++;
                 }
                 if (letter.ToString().ToUpper().Contains(inString[i].ToString()))
-	            {
+                {
                     numUpper++;
-	            }
+                }
             }
-
-            int numLetter = numLower + numUpper;
             Console.WriteLine("Input: " + inString);
-            Console.WriteLine("Number of lowercase {0}s found: {1}", letter.ToString().ToUpper(), numLower);
-            Console.WriteLine("Number of uppercase {0}s found: {1}", letter.ToString().ToUpper(), numUpper);
-            Console.WriteLine("Number of {0}s found: {1}", letter.ToString().ToUpper(), numLetter);
+            Console.WriteLine("Number of lowercase letters: {0}", numLower);
+            Console.WriteLine("Number of uppercase letters: {0}", numUpper);
+            Console.WriteLine("Total letters found: " + (numUpper + numLower));
         }
     }
 }
